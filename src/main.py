@@ -1,4 +1,9 @@
 import os
 
-dir_name = "dimik_pub"
-os.mkdir(dir_name)
+def create_directory(name):
+    try:
+        os.mkdir(name)
+    except FileExistsError:
+        print(name, "already exists")
+
+create_directory("dimik_pub")

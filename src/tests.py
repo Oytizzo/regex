@@ -1,5 +1,9 @@
 # import re
 
+# s = "22/07/2017, 20/01/2017, 01/01/2018"
+
+# new_s = re.sub(r'(\d{2})/(\d{2')
+
 # s = "Afganistan, America, Bangladesh, Canada, Denmark, England, Greenland, Iceland, Netherlands, New Zealand, Sweden, Switzerland"
 
 # countries = s.split(",")

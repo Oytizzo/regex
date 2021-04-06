@@ -3,7 +3,7 @@ import re
 with open("index.html", "r") as f:
     text = f.read()
 
-# print(text)
+# print(type(text))
 
 # worked 1
 new_s = re.sub(r'<li>\s*(.*?)\s*<ol>\s*<li>(.*?)</li>\s*<li>(.*?)</li>\s*</ol>\s*</li>', r'\1 - \2, \3', text, re.S)

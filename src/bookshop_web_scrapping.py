@@ -1,3 +1,4 @@
+# Web scrapping from the bookshop website
 import requests
 import re
 
@@ -70,4 +71,3 @@ import re
 # availability_pat = re.compile(r'<th>Availability</th>\s*\<td>(.*?)</td>')
 # availability = re.findall(availability_pat, text)
 # print(availability[0])
-

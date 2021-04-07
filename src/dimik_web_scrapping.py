@@ -1,3 +1,4 @@
+# web scrapping from dimik website
 import os
 import requests
 import sys

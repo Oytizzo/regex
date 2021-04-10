@@ -1,5 +1,6 @@
 import requests
 import re
+from html import unescape
 
 url = "http://books.toscrape.com/"                                                  # main url
 print(url)
@@ -38,7 +39,18 @@ print(len(book_list))                                                           
 #     print(book)
 
 # book starts here -----------------------------------------------------------------
-# book1 = 
+book1 = book_list[0]
+
+book1_url = book1[0]
+book1_name = unescape(book1[1])
+
+# print(book1_name)
+print(book1_url)
+
+book1_url = book1_url.replace("../../../", "")
+book1_url = "http://books.toscrape.com/catalogue/" + book1_url
+print(book1_url)
+
 
 # next page starts here ------------------------------------------------------------
 next_page_pat = re.compile(r'<li class="next"><a href="(.*?)">next</a></li>')       # next_page_pat
